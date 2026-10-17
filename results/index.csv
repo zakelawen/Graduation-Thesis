@@ -1,89 +1,201 @@
-﻿table,method,dataset,model,value,correct,total,data_file,result
-main,PMC-Llama,medmcqa,,27.04,1352,5000,results/main_table/medmcqa/pmc-llama-7b.jsonl.gz,results/notebook_outputs/evaluation.ipynb cell 17
-main,PMC-Llama,medqa,,16.94,847,5000,results/main_table/medqa/pmc-llama-7b.jsonl.gz,results/notebook_outputs/evaluation.ipynb cell 18
-main,PMC-Llama,medexqa,,36.60,344,940,results/main_table/medexqa/pmc-llama-7b.jsonl.gz,results/main_table/medexqa/pmc-llama-7b.jsonl.gz (is_match)
-main,PMC-Llama,mmlu,,37.01,607,1640,results/main_table/mmlu/pmc-llama-7b.jsonl.gz,results/main_table/mmlu/pmc-llama-7b.jsonl.gz (is_match)
-main,MedAlpaca,medmcqa,,36.22,1811,5000,results/main_table/medmcqa/medalpaca.jsonl.gz,results/notebook_outputs/evaluation.ipynb cell 15
-main,MedAlpaca,medqa,,50.04,2502,5000,results/main_table/medqa/medalpaca.jsonl.gz,results/notebook_outputs/evaluation.ipynb cell 16
-main,MedAlpaca,medexqa,,50.11,471,940,results/main_table/medexqa/medalpaca.jsonl.gz,results/main_table/medexqa/medalpaca.jsonl.gz (is_match)
-main,MedAlpaca,mmlu,,60.85,998,1640,results/main_table/mmlu/medalpaca.jsonl.gz,results/main_table/mmlu/medalpaca.jsonl.gz (is_match)
-main,Self-RAG,medmcqa,,38.32,,,,original record (no data file)
-main,Self-RAG,medqa,,28.26,,,,original record (no data file)
-main,Self-RAG,medexqa,,71.38,671,940,results/main_table/medexqa/selfrag.jsonl.gz,results/main_table/medexqa/selfrag.jsonl.gz (is_match)
-main,Self-RAG,mmlu,,64.27,1054,1640,results/main_table/mmlu/selfrag.jsonl.gz,results/main_table/mmlu/selfrag.jsonl.gz (is_match)
-main,Llama3.1-70B,medmcqa,,78.28,3914,5000,results/main_table/medmcqa/llama3.1-70b.jsonl.gz,results/notebook_outputs/evaluation.ipynb cell 5
-main,Llama3.1-70B,medqa,,57.54,2877,5000,results/main_table/medqa/llama3.1-70b.jsonl.gz,results/notebook_outputs/evaluation.ipynb cell 6
-main,Llama3.1-70B,medexqa,,77.34,727,940,results/main_table/medexqa/llama3.1-70b.jsonl.gz,results/main_table/medexqa/llama3.1-70b.jsonl.gz (is_match)
-main,Llama3.1-70B,mmlu,,78.05,1280,1640,results/main_table/mmlu/llama3.1-70b.jsonl.gz,results/main_table/mmlu/llama3.1-70b.jsonl.gz (is_match)
-main,Zero Shot,medmcqa,Qwen2.5-7B,45.60,2280,5000,results/main_table/medmcqa/zero_shot__qwen.jsonl.gz,results/notebook_outputs/evaluation.ipynb cell 3
-main,Zero Shot,medmcqa,Llama3.1-8B,72.88,3644,5000,results/main_table/medmcqa/zero_shot__llama.jsonl.gz,results/notebook_outputs/evaluation.ipynb cell 1
-main,Zero Shot,medqa,Qwen2.5-7B,24.86,1243,5000,results/main_table/medqa/zero_shot__qwen.jsonl.gz,results/notebook_outputs/evaluation.ipynb cell 4
-main,Zero Shot,medqa,Llama3.1-8B,37.10,1855,5000,results/main_table/medqa/zero_shot__llama.jsonl.gz,results/notebook_outputs/evaluation.ipynb cell 2
-main,Zero Shot,medexqa,Qwen2.5-7B,67.45,634,940,results/main_table/medexqa/zero_shot__qwen.jsonl.gz,results/main_table/medexqa/zero_shot__qwen.jsonl.gz (is_match)
-main,Zero Shot,medexqa,Llama3.1-8B,71.38,671,940,results/main_table/medexqa/zero_shot__llama.jsonl.gz,results/main_table/medexqa/zero_shot__llama.jsonl.gz (is_match)
-main,Zero Shot,mmlu,Qwen2.5-7B,63.54,1042,1640,results/main_table/mmlu/zero_shot__qwen.jsonl.gz,results/main_table/mmlu/zero_shot__qwen.jsonl.gz (is_match)
-main,Zero Shot,mmlu,Llama3.1-8B,68.29,1120,1640,results/main_table/mmlu/zero_shot__llama.jsonl.gz,results/main_table/mmlu/zero_shot__llama.jsonl.gz (is_match)
-main,CoT,medmcqa,Qwen2.5-7B,50.76,2538,5000,results/main_table/medmcqa/cot__qwen.jsonl.gz,results/main_table/medmcqa/cot__qwen.jsonl.gz (is_correct)
-main,CoT,medmcqa,Llama3.1-8B,54.82,2741,5000,,results/notebook_outputs/cot_llama.ipynb cell 1
-main,CoT,medqa,Qwen2.5-7B,29.68,1484,5000,results/main_table/medqa/cot__qwen.jsonl.gz,results/main_table/medqa/cot__qwen.jsonl.gz (is_correct)
-main,CoT,medqa,Llama3.1-8B,60.06,3003,5000,,results/notebook_outputs/cot_llama.ipynb cell 1
-main,CoT,medexqa,Qwen2.5-7B,63.09,593,940,results/main_table/medexqa/cot__qwen.jsonl.gz,results/main_table/medexqa/cot__qwen.jsonl.gz (is_correct)
-main,CoT,medexqa,Llama3.1-8B,56.28,529,940,results/main_table/medexqa/cot__llama.jsonl.gz,results/main_table/medexqa/cot__llama.jsonl.gz (is_correct)
-main,CoT,mmlu,Qwen2.5-7B,57.56,944,1640,results/main_table/mmlu/cot__qwen.jsonl.gz,results/main_table/mmlu/cot__qwen.jsonl.gz (is_correct)
-main,CoT,mmlu,Llama3.1-8B,55.55,911,1640,results/main_table/mmlu/cot__llama.jsonl.gz,results/main_table/mmlu/cot__llama.jsonl.gz (is_correct)
-main,Naive RAG,medmcqa,Qwen2.5-7B,54.04,2702,5000,results/main_table/medmcqa/naive_rag__qwen.jsonl.gz,results/notebook_outputs/evaluation.ipynb cell 9
-main,Naive RAG,medmcqa,Llama3.1-8B,62.50,3125,5000,results/main_table/medmcqa/naive_rag__llama.jsonl.gz,results/notebook_outputs/evaluation.ipynb cell 7
-main,Naive RAG,medqa,Qwen2.5-7B,40.10,2005,5000,results/main_table/medqa/naive_rag__qwen.jsonl.gz,results/notebook_outputs/evaluation.ipynb cell 10
-main,Naive RAG,medqa,Llama3.1-8B,46.16,2308,5000,results/main_table/medqa/naive_rag__llama.jsonl.gz,results/notebook_outputs/evaluation.ipynb cell 8
-main,Naive RAG,medexqa,Qwen2.5-7B,69.36,652,940,results/main_table/medexqa/naive_rag__qwen.jsonl.gz,results/main_table/medexqa/naive_rag__qwen.jsonl.gz (is_match)
-main,Naive RAG,medexqa,Llama3.1-8B,66.28,623,940,results/main_table/medexqa/naive_rag__llama.jsonl.gz,results/main_table/medexqa/naive_rag__llama.jsonl.gz (is_match)
-main,Naive RAG,mmlu,Qwen2.5-7B,63.96,1049,1640,results/main_table/mmlu/naive_rag__qwen.jsonl.gz,results/main_table/mmlu/naive_rag__qwen.jsonl.gz (is_match)
-main,Naive RAG,mmlu,Llama3.1-8B,61.77,1013,1640,results/main_table/mmlu/naive_rag__llama.jsonl.gz,results/main_table/mmlu/naive_rag__llama.jsonl.gz (is_match)
-main,Adaptive RAG,medmcqa,Qwen2.5-7B,62.00,3100,5000,results/main_table/medmcqa/adaptive_rag__qwen.jsonl.gz,results/main_table/medmcqa/adaptive_rag__qwen.jsonl.gz (is_match)
-main,Adaptive RAG,medmcqa,Llama3.1-8B,72.62,3631,5000,results/main_table/medmcqa/adaptive_rag__llama.jsonl.gz,results/main_table/medmcqa/adaptive_rag__llama.jsonl.gz (is_match)
-main,Adaptive RAG,medqa,Qwen2.5-7B,49.68,2484,5000,results/main_table/medqa/adaptive_rag__qwen.jsonl.gz,results/main_table/medqa/adaptive_rag__qwen.jsonl.gz (is_match)
-main,Adaptive RAG,medqa,Llama3.1-8B,62.08,3104,5000,results/main_table/medqa/adaptive_rag__llama.jsonl.gz,results/main_table/medqa/adaptive_rag__llama.jsonl.gz (is_match)
-main,Adaptive RAG,medexqa,Qwen2.5-7B,71.06,668,940,results/main_table/medexqa/adaptive_rag__qwen.jsonl.gz,results/main_table/medexqa/adaptive_rag__qwen.jsonl.gz (is_match)
-main,Adaptive RAG,medexqa,Llama3.1-8B,69.68,655,940,results/main_table/medexqa/adaptive_rag__llama.jsonl.gz,results/main_table/medexqa/adaptive_rag__llama.jsonl.gz (is_match)
-main,Adaptive RAG,mmlu,Qwen2.5-7B,67.44,1106,1640,results/main_table/mmlu/adaptive_rag__qwen.jsonl.gz,results/main_table/mmlu/adaptive_rag__qwen.jsonl.gz (is_match)
-main,Adaptive RAG,mmlu,Llama3.1-8B,67.13,1101,1640,results/main_table/mmlu/adaptive_rag__llama.jsonl.gz,results/main_table/mmlu/adaptive_rag__llama.jsonl.gz (is_match)
-main,DoLa,medmcqa,Qwen2.5-7B,67.16,3358,5000,results/main_table/medmcqa/dola__qwen.jsonl.gz,results/main_table/medmcqa/dola__qwen.jsonl.gz (is_match)
-main,DoLa,medmcqa,Llama3.1-8B,71.30,3565,5000,results/main_table/medmcqa/dola__llama.jsonl.gz,results/main_table/medmcqa/dola__llama.jsonl.gz (is_match)
-main,DoLa,medqa,Qwen2.5-7B,56.72,2836,5000,results/main_table/medqa/dola__qwen.jsonl.gz,results/main_table/medqa/dola__qwen.jsonl.gz (is_match)
-main,DoLa,medqa,Llama3.1-8B,63.64,3182,5000,results/main_table/medqa/dola__llama.jsonl.gz,results/main_table/medqa/dola__llama.jsonl.gz (is_match)
-main,DoLa,medexqa,Qwen2.5-7B,73.19,688,940,results/main_table/medexqa/dola__qwen.jsonl.gz,results/main_table/medexqa/dola__qwen.jsonl.gz (is_match)
-main,DoLa,medexqa,Llama3.1-8B,70.85,666,940,results/main_table/medexqa/dola__llama.jsonl.gz,results/main_table/medexqa/dola__llama.jsonl.gz (is_match)
-main,DoLa,mmlu,Qwen2.5-7B,71.83,1178,1640,results/main_table/mmlu/dola__qwen.jsonl.gz,results/main_table/mmlu/dola__qwen.jsonl.gz (is_match)
-main,DoLa,mmlu,Llama3.1-8B,70.49,1156,1640,results/main_table/mmlu/dola__llama.jsonl.gz,results/main_table/mmlu/dola__llama.jsonl.gz (is_match)
-main,CAD,medmcqa,Qwen2.5-7B,62.54,3127,5000,results/main_table/medmcqa/cad__qwen.jsonl.gz,results/main_table/medmcqa/cad__qwen.jsonl.gz (context_aware_match)
-main,CAD,medmcqa,Llama3.1-8B,63.48,3174,5000,results/main_table/medmcqa/cad__llama.jsonl.gz,results/main_table/medmcqa/cad__llama.jsonl.gz (context_aware_match)
-main,CAD,medqa,Qwen2.5-7B,55.04,2752,5000,results/main_table/medqa/cad__qwen.jsonl.gz,results/main_table/medqa/cad__qwen.jsonl.gz (context_aware_match)
-main,CAD,medqa,Llama3.1-8B,57.12,2856,5000,results/main_table/medqa/cad__llama.jsonl.gz,results/main_table/medqa/cad__llama.jsonl.gz (context_aware_match)
-main,CAD,medexqa,Qwen2.5-7B,68.94,648,940,results/main_table/medexqa/cad__qwen.jsonl.gz,results/main_table/medexqa/cad__qwen.jsonl.gz (is_match)
-main,CAD,medexqa,Llama3.1-8B,62.66,589,940,results/main_table/medexqa/cad__llama.jsonl.gz,results/main_table/medexqa/cad__llama.jsonl.gz (is_match)
-main,CAD,mmlu,Qwen2.5-7B,67.07,1100,1640,results/main_table/mmlu/cad__qwen.jsonl.gz,results/main_table/mmlu/cad__qwen.jsonl.gz (is_match)
-main,CAD,mmlu,Llama3.1-8B,62.93,1032,1640,results/main_table/mmlu/cad__llama.jsonl.gz,results/main_table/mmlu/cad__llama.jsonl.gz (is_match)
-main,Ours,medmcqa,Qwen2.5-7B,67.16,3358,5000,results/main_table/medmcqa/ours__qwen.jsonl.gz,results/main_table/medmcqa/ours__qwen.jsonl.gz (is_match)
-main,Ours,medmcqa,Llama3.1-8B,70.44,3522,5000,results/main_table/medmcqa/ours__llama.jsonl.gz,results/main_table/medmcqa/ours__llama.jsonl.gz (is_match)
-main,Ours,medqa,Qwen2.5-7B,57.38,2869,5000,results/main_table/medqa/ours__qwen.jsonl.gz,results/main_table/medqa/ours__qwen.jsonl.gz (is_match)
-main,Ours,medqa,Llama3.1-8B,57.12,2856,5000,results/main_table/medqa/ours__llama.jsonl.gz,results/main_table/medqa/ours__llama.jsonl.gz (is_match)
-main,Ours,medexqa,Qwen2.5-7B,74.68,702,940,results/main_table/medexqa/ours__qwen.jsonl.gz,results/main_table/medexqa/ours__qwen.jsonl.gz (is_match)
-main,Ours,medexqa,Llama3.1-8B,70.74,665,940,results/main_table/medexqa/ours__llama.jsonl.gz,results/main_table/medexqa/ours__llama.jsonl.gz (is_match)
-main,Ours,mmlu,Qwen2.5-7B,73.84,1211,1640,results/main_table/mmlu/ours__qwen.jsonl.gz,results/main_table/mmlu/ours__qwen.jsonl.gz (is_match)
-main,Ours,mmlu,Llama3.1-8B,70.37,1154,1640,results/main_table/mmlu/ours__llama.jsonl.gz,results/main_table/mmlu/ours__llama.jsonl.gz (is_match)
-ablation,w/o Stage 1,medmcqa,Llama3.1-8B,69.44,3472,5000,results/ablation/wo_stage1__medmcqa__llama.jsonl.gz,results/ablation/wo_stage1__medmcqa__llama.jsonl.gz (is_match)
-ablation,w/o Stage 1,medmcqa,Qwen2.5-7B,67.14,3357,5000,results/ablation/wo_stage1__medmcqa__qwen.jsonl.gz,results/ablation/wo_stage1__medmcqa__qwen.jsonl.gz (is_match)
-ablation,w/o Stage 1,medqa,Llama3.1-8B,57.62,2881,5000,results/ablation/wo_stage1__medqa__llama.jsonl.gz,results/ablation/wo_stage1__medqa__llama.jsonl.gz (is_match)
-ablation,w/o Stage 1,medqa,Qwen2.5-7B,56.96,2848,5000,results/ablation/wo_stage1__medqa__qwen.jsonl.gz,results/ablation/wo_stage1__medqa__qwen.jsonl.gz (is_match)
-ablation,w/o Stage 2,medmcqa,Llama3.1-8B,66.16,3308,5000,results/ablation/wo_stage2__medmcqa__llama.jsonl.gz,results/notebook_outputs/evaluation.ipynb cell 11
-ablation,w/o Stage 2,medmcqa,Qwen2.5-7B,59.02,2951,5000,results/ablation/wo_stage2__medmcqa__qwen.jsonl.gz,results/notebook_outputs/evaluation.ipynb cell 13
-ablation,w/o Stage 2,medqa,Llama3.1-8B,51.46,2573,5000,results/ablation/wo_stage2__medqa__llama.jsonl.gz,results/notebook_outputs/evaluation.ipynb cell 12
-ablation,w/o Stage 2,medqa,Qwen2.5-7B,41.38,2069,5000,results/ablation/wo_stage2__medqa__qwen.jsonl.gz,results/notebook_outputs/evaluation.ipynb cell 14
-ablation,w/o Stage 1 & 2,medmcqa,Qwen2.5-7B,54.04,2702,5000,results/main_table/medmcqa/naive_rag__qwen.jsonl.gz,results/notebook_outputs/evaluation.ipynb cell 9
-ablation,w/o Stage 1 & 2,medmcqa,Llama3.1-8B,62.50,3125,5000,results/main_table/medmcqa/naive_rag__llama.jsonl.gz,results/notebook_outputs/evaluation.ipynb cell 7
-ablation,w/o Stage 1 & 2,medqa,Qwen2.5-7B,40.10,2005,5000,results/main_table/medqa/naive_rag__qwen.jsonl.gz,results/notebook_outputs/evaluation.ipynb cell 10
-ablation,w/o Stage 1 & 2,medqa,Llama3.1-8B,46.16,2308,5000,results/main_table/medqa/naive_rag__llama.jsonl.gz,results/notebook_outputs/evaluation.ipynb cell 8
-ablation,Ours,medmcqa,Qwen2.5-7B,67.16,3358,5000,results/main_table/medmcqa/ours__qwen.jsonl.gz,results/main_table/medmcqa/ours__qwen.jsonl.gz (is_match)
-ablation,Ours,medmcqa,Llama3.1-8B,70.44,3522,5000,results/main_table/medmcqa/ours__llama.jsonl.gz,results/main_table/medmcqa/ours__llama.jsonl.gz (is_match)
-ablation,Ours,medqa,Qwen2.5-7B,57.38,2869,5000,results/main_table/medqa/ours__qwen.jsonl.gz,results/main_table/medqa/ours__qwen.jsonl.gz (is_match)
-ablation,Ours,medqa,Llama3.1-8B,57.12,2856,5000,results/main_table/medqa/ours__llama.jsonl.gz,results/main_table/medqa/ours__llama.jsonl.gz (is_match)
+﻿table,method,dataset,model,metric,value,correct,total,data_file,result
+main,PMC-Llama,medmcqa,,accuracy,27.04,1352,5000,results/main_table/medmcqa/pmc-llama-7b.jsonl.gz,results/notebook_outputs/evaluation.ipynb cell 17
+main,PMC-Llama,medqa,,accuracy,16.94,847,5000,results/main_table/medqa/pmc-llama-7b.jsonl.gz,results/notebook_outputs/evaluation.ipynb cell 18
+main,PMC-Llama,medexqa,,accuracy,36.60,344,940,results/main_table/medexqa/pmc-llama-7b.jsonl.gz,results/main_table/medexqa/pmc-llama-7b.jsonl.gz (is_match)
+main,PMC-Llama,mmlu,,accuracy,37.01,607,1640,results/main_table/mmlu/pmc-llama-7b.jsonl.gz,results/main_table/mmlu/pmc-llama-7b.jsonl.gz (is_match)
+main,MedAlpaca,medmcqa,,accuracy,36.22,1811,5000,results/main_table/medmcqa/medalpaca.jsonl.gz,results/notebook_outputs/evaluation.ipynb cell 15
+main,MedAlpaca,medqa,,accuracy,50.04,2502,5000,results/main_table/medqa/medalpaca.jsonl.gz,results/notebook_outputs/evaluation.ipynb cell 16
+main,MedAlpaca,medexqa,,accuracy,50.11,471,940,results/main_table/medexqa/medalpaca.jsonl.gz,results/main_table/medexqa/medalpaca.jsonl.gz (is_match)
+main,MedAlpaca,mmlu,,accuracy,60.85,998,1640,results/main_table/mmlu/medalpaca.jsonl.gz,results/main_table/mmlu/medalpaca.jsonl.gz (is_match)
+main,Self-RAG,medmcqa,,accuracy,38.32,,,,original record (no data file)
+main,Self-RAG,medqa,,accuracy,28.26,,,,original record (no data file)
+main,Self-RAG,medexqa,,accuracy,71.38,671,940,results/main_table/medexqa/selfrag.jsonl.gz,results/main_table/medexqa/selfrag.jsonl.gz (is_match)
+main,Self-RAG,mmlu,,accuracy,64.27,1054,1640,results/main_table/mmlu/selfrag.jsonl.gz,results/main_table/mmlu/selfrag.jsonl.gz (is_match)
+main,Llama3.1-70B,medmcqa,,accuracy,78.28,3914,5000,results/main_table/medmcqa/llama3.1-70b.jsonl.gz,results/notebook_outputs/evaluation.ipynb cell 5
+main,Llama3.1-70B,medqa,,accuracy,57.54,2877,5000,results/main_table/medqa/llama3.1-70b.jsonl.gz,results/notebook_outputs/evaluation.ipynb cell 6
+main,Llama3.1-70B,medexqa,,accuracy,77.34,727,940,results/main_table/medexqa/llama3.1-70b.jsonl.gz,results/main_table/medexqa/llama3.1-70b.jsonl.gz (is_match)
+main,Llama3.1-70B,mmlu,,accuracy,78.05,1280,1640,results/main_table/mmlu/llama3.1-70b.jsonl.gz,results/main_table/mmlu/llama3.1-70b.jsonl.gz (is_match)
+main,Zero Shot,medmcqa,Qwen2.5-7B,accuracy,45.60,2280,5000,results/main_table/medmcqa/zero_shot__qwen.jsonl.gz,results/notebook_outputs/evaluation.ipynb cell 3
+main,Zero Shot,medmcqa,Llama3.1-8B,accuracy,72.88,3644,5000,results/main_table/medmcqa/zero_shot__llama.jsonl.gz,results/notebook_outputs/evaluation.ipynb cell 1
+main,Zero Shot,medqa,Qwen2.5-7B,accuracy,24.86,1243,5000,results/main_table/medqa/zero_shot__qwen.jsonl.gz,results/notebook_outputs/evaluation.ipynb cell 4
+main,Zero Shot,medqa,Llama3.1-8B,accuracy,37.10,1855,5000,results/main_table/medqa/zero_shot__llama.jsonl.gz,results/notebook_outputs/evaluation.ipynb cell 2
+main,Zero Shot,medexqa,Qwen2.5-7B,accuracy,67.45,634,940,results/main_table/medexqa/zero_shot__qwen.jsonl.gz,results/main_table/medexqa/zero_shot__qwen.jsonl.gz (is_match)
+main,Zero Shot,medexqa,Llama3.1-8B,accuracy,71.38,671,940,results/main_table/medexqa/zero_shot__llama.jsonl.gz,results/main_table/medexqa/zero_shot__llama.jsonl.gz (is_match)
+main,Zero Shot,mmlu,Qwen2.5-7B,accuracy,63.54,1042,1640,results/main_table/mmlu/zero_shot__qwen.jsonl.gz,results/main_table/mmlu/zero_shot__qwen.jsonl.gz (is_match)
+main,Zero Shot,mmlu,Llama3.1-8B,accuracy,68.29,1120,1640,results/main_table/mmlu/zero_shot__llama.jsonl.gz,results/main_table/mmlu/zero_shot__llama.jsonl.gz (is_match)
+main,CoT,medmcqa,Qwen2.5-7B,accuracy,50.76,2538,5000,results/main_table/medmcqa/cot__qwen.jsonl.gz,results/main_table/medmcqa/cot__qwen.jsonl.gz (is_correct)
+main,CoT,medmcqa,Llama3.1-8B,accuracy,54.82,2741,5000,,results/notebook_outputs/cot_llama.ipynb cell 1
+main,CoT,medqa,Qwen2.5-7B,accuracy,29.68,1484,5000,results/main_table/medqa/cot__qwen.jsonl.gz,results/main_table/medqa/cot__qwen.jsonl.gz (is_correct)
+main,CoT,medqa,Llama3.1-8B,accuracy,60.06,3003,5000,,results/notebook_outputs/cot_llama.ipynb cell 1
+main,CoT,medexqa,Qwen2.5-7B,accuracy,63.09,593,940,results/main_table/medexqa/cot__qwen.jsonl.gz,results/main_table/medexqa/cot__qwen.jsonl.gz (is_correct)
+main,CoT,medexqa,Llama3.1-8B,accuracy,56.28,529,940,results/main_table/medexqa/cot__llama.jsonl.gz,results/main_table/medexqa/cot__llama.jsonl.gz (is_correct)
+main,CoT,mmlu,Qwen2.5-7B,accuracy,57.56,944,1640,results/main_table/mmlu/cot__qwen.jsonl.gz,results/main_table/mmlu/cot__qwen.jsonl.gz (is_correct)
+main,CoT,mmlu,Llama3.1-8B,accuracy,55.55,911,1640,results/main_table/mmlu/cot__llama.jsonl.gz,results/main_table/mmlu/cot__llama.jsonl.gz (is_correct)
+main,Naive RAG,medmcqa,Qwen2.5-7B,accuracy,54.04,2702,5000,results/main_table/medmcqa/naive_rag__qwen.jsonl.gz,results/notebook_outputs/evaluation.ipynb cell 9
+main,Naive RAG,medmcqa,Llama3.1-8B,accuracy,62.50,3125,5000,results/main_table/medmcqa/naive_rag__llama.jsonl.gz,results/notebook_outputs/evaluation.ipynb cell 7
+main,Naive RAG,medqa,Qwen2.5-7B,accuracy,40.10,2005,5000,results/main_table/medqa/naive_rag__qwen.jsonl.gz,results/notebook_outputs/evaluation.ipynb cell 10
+main,Naive RAG,medqa,Llama3.1-8B,accuracy,46.16,2308,5000,results/main_table/medqa/naive_rag__llama.jsonl.gz,results/notebook_outputs/evaluation.ipynb cell 8
+main,Naive RAG,medexqa,Qwen2.5-7B,accuracy,69.36,652,940,results/main_table/medexqa/naive_rag__qwen.jsonl.gz,results/main_table/medexqa/naive_rag__qwen.jsonl.gz (is_match)
+main,Naive RAG,medexqa,Llama3.1-8B,accuracy,66.28,623,940,results/main_table/medexqa/naive_rag__llama.jsonl.gz,results/main_table/medexqa/naive_rag__llama.jsonl.gz (is_match)
+main,Naive RAG,mmlu,Qwen2.5-7B,accuracy,63.96,1049,1640,results/main_table/mmlu/naive_rag__qwen.jsonl.gz,results/main_table/mmlu/naive_rag__qwen.jsonl.gz (is_match)
+main,Naive RAG,mmlu,Llama3.1-8B,accuracy,61.77,1013,1640,results/main_table/mmlu/naive_rag__llama.jsonl.gz,results/main_table/mmlu/naive_rag__llama.jsonl.gz (is_match)
+main,Adaptive RAG,medmcqa,Qwen2.5-7B,accuracy,62.00,3100,5000,results/main_table/medmcqa/adaptive_rag__qwen.jsonl.gz,results/main_table/medmcqa/adaptive_rag__qwen.jsonl.gz (is_match)
+main,Adaptive RAG,medmcqa,Llama3.1-8B,accuracy,72.62,3631,5000,results/main_table/medmcqa/adaptive_rag__llama.jsonl.gz,results/main_table/medmcqa/adaptive_rag__llama.jsonl.gz (is_match)
+main,Adaptive RAG,medqa,Qwen2.5-7B,accuracy,49.68,2484,5000,results/main_table/medqa/adaptive_rag__qwen.jsonl.gz,results/main_table/medqa/adaptive_rag__qwen.jsonl.gz (is_match)
+main,Adaptive RAG,medqa,Llama3.1-8B,accuracy,62.08,3104,5000,results/main_table/medqa/adaptive_rag__llama.jsonl.gz,results/main_table/medqa/adaptive_rag__llama.jsonl.gz (is_match)
+main,Adaptive RAG,medexqa,Qwen2.5-7B,accuracy,71.06,668,940,results/main_table/medexqa/adaptive_rag__qwen.jsonl.gz,results/main_table/medexqa/adaptive_rag__qwen.jsonl.gz (is_match)
+main,Adaptive RAG,medexqa,Llama3.1-8B,accuracy,69.68,655,940,results/main_table/medexqa/adaptive_rag__llama.jsonl.gz,results/main_table/medexqa/adaptive_rag__llama.jsonl.gz (is_match)
+main,Adaptive RAG,mmlu,Qwen2.5-7B,accuracy,67.44,1106,1640,results/main_table/mmlu/adaptive_rag__qwen.jsonl.gz,results/main_table/mmlu/adaptive_rag__qwen.jsonl.gz (is_match)
+main,Adaptive RAG,mmlu,Llama3.1-8B,accuracy,67.13,1101,1640,results/main_table/mmlu/adaptive_rag__llama.jsonl.gz,results/main_table/mmlu/adaptive_rag__llama.jsonl.gz (is_match)
+main,DoLa,medmcqa,Qwen2.5-7B,accuracy,67.16,3358,5000,results/main_table/medmcqa/dola__qwen.jsonl.gz,results/main_table/medmcqa/dola__qwen.jsonl.gz (is_match)
+main,DoLa,medmcqa,Llama3.1-8B,accuracy,71.30,3565,5000,results/main_table/medmcqa/dola__llama.jsonl.gz,results/main_table/medmcqa/dola__llama.jsonl.gz (is_match)
+main,DoLa,medqa,Qwen2.5-7B,accuracy,56.72,2836,5000,results/main_table/medqa/dola__qwen.jsonl.gz,results/main_table/medqa/dola__qwen.jsonl.gz (is_match)
+main,DoLa,medqa,Llama3.1-8B,accuracy,63.64,3182,5000,results/main_table/medqa/dola__llama.jsonl.gz,results/main_table/medqa/dola__llama.jsonl.gz (is_match)
+main,DoLa,medexqa,Qwen2.5-7B,accuracy,73.19,688,940,results/main_table/medexqa/dola__qwen.jsonl.gz,results/main_table/medexqa/dola__qwen.jsonl.gz (is_match)
+main,DoLa,medexqa,Llama3.1-8B,accuracy,70.85,666,940,results/main_table/medexqa/dola__llama.jsonl.gz,results/main_table/medexqa/dola__llama.jsonl.gz (is_match)
+main,DoLa,mmlu,Qwen2.5-7B,accuracy,71.83,1178,1640,results/main_table/mmlu/dola__qwen.jsonl.gz,results/main_table/mmlu/dola__qwen.jsonl.gz (is_match)
+main,DoLa,mmlu,Llama3.1-8B,accuracy,70.49,1156,1640,results/main_table/mmlu/dola__llama.jsonl.gz,results/main_table/mmlu/dola__llama.jsonl.gz (is_match)
+main,CAD,medmcqa,Qwen2.5-7B,accuracy,62.54,3127,5000,results/main_table/medmcqa/cad__qwen.jsonl.gz,results/main_table/medmcqa/cad__qwen.jsonl.gz (context_aware_match)
+main,CAD,medmcqa,Llama3.1-8B,accuracy,63.48,3174,5000,results/main_table/medmcqa/cad__llama.jsonl.gz,results/main_table/medmcqa/cad__llama.jsonl.gz (context_aware_match)
+main,CAD,medqa,Qwen2.5-7B,accuracy,55.04,2752,5000,results/main_table/medqa/cad__qwen.jsonl.gz,results/main_table/medqa/cad__qwen.jsonl.gz (context_aware_match)
+main,CAD,medqa,Llama3.1-8B,accuracy,57.12,2856,5000,results/main_table/medqa/cad__llama.jsonl.gz,results/main_table/medqa/cad__llama.jsonl.gz (context_aware_match)
+main,CAD,medexqa,Qwen2.5-7B,accuracy,68.94,648,940,results/main_table/medexqa/cad__qwen.jsonl.gz,results/main_table/medexqa/cad__qwen.jsonl.gz (is_match)
+main,CAD,medexqa,Llama3.1-8B,accuracy,62.66,589,940,results/main_table/medexqa/cad__llama.jsonl.gz,results/main_table/medexqa/cad__llama.jsonl.gz (is_match)
+main,CAD,mmlu,Qwen2.5-7B,accuracy,67.07,1100,1640,results/main_table/mmlu/cad__qwen.jsonl.gz,results/main_table/mmlu/cad__qwen.jsonl.gz (is_match)
+main,CAD,mmlu,Llama3.1-8B,accuracy,62.93,1032,1640,results/main_table/mmlu/cad__llama.jsonl.gz,results/main_table/mmlu/cad__llama.jsonl.gz (is_match)
+main,Ours,medmcqa,Qwen2.5-7B,accuracy,67.16,3358,5000,results/main_table/medmcqa/ours__qwen.jsonl.gz,results/main_table/medmcqa/ours__qwen.jsonl.gz (is_match)
+main,Ours,medmcqa,Llama3.1-8B,accuracy,70.44,3522,5000,results/main_table/medmcqa/ours__llama.jsonl.gz,results/main_table/medmcqa/ours__llama.jsonl.gz (is_match)
+main,Ours,medqa,Qwen2.5-7B,accuracy,57.38,2869,5000,results/main_table/medqa/ours__qwen.jsonl.gz,results/main_table/medqa/ours__qwen.jsonl.gz (is_match)
+main,Ours,medqa,Llama3.1-8B,accuracy,57.12,2856,5000,results/main_table/medqa/ours__llama.jsonl.gz,results/main_table/medqa/ours__llama.jsonl.gz (is_match)
+main,Ours,medexqa,Qwen2.5-7B,accuracy,74.68,702,940,results/main_table/medexqa/ours__qwen.jsonl.gz,results/main_table/medexqa/ours__qwen.jsonl.gz (is_match)
+main,Ours,medexqa,Llama3.1-8B,accuracy,70.74,665,940,results/main_table/medexqa/ours__llama.jsonl.gz,results/main_table/medexqa/ours__llama.jsonl.gz (is_match)
+main,Ours,mmlu,Qwen2.5-7B,accuracy,73.84,1211,1640,results/main_table/mmlu/ours__qwen.jsonl.gz,results/main_table/mmlu/ours__qwen.jsonl.gz (is_match)
+main,Ours,mmlu,Llama3.1-8B,accuracy,70.37,1154,1640,results/main_table/mmlu/ours__llama.jsonl.gz,results/main_table/mmlu/ours__llama.jsonl.gz (is_match)
+ablation,w/o Stage 1,medmcqa,Llama3.1-8B,accuracy,69.44,3472,5000,results/ablation/wo_stage1__medmcqa__llama.jsonl.gz,results/ablation/wo_stage1__medmcqa__llama.jsonl.gz (is_match)
+ablation,w/o Stage 1,medmcqa,Qwen2.5-7B,accuracy,67.14,3357,5000,results/ablation/wo_stage1__medmcqa__qwen.jsonl.gz,results/ablation/wo_stage1__medmcqa__qwen.jsonl.gz (is_match)
+ablation,w/o Stage 1,medqa,Llama3.1-8B,accuracy,57.62,2881,5000,results/ablation/wo_stage1__medqa__llama.jsonl.gz,results/ablation/wo_stage1__medqa__llama.jsonl.gz (is_match)
+ablation,w/o Stage 1,medqa,Qwen2.5-7B,accuracy,56.96,2848,5000,results/ablation/wo_stage1__medqa__qwen.jsonl.gz,results/ablation/wo_stage1__medqa__qwen.jsonl.gz (is_match)
+ablation,w/o Stage 2,medmcqa,Llama3.1-8B,accuracy,66.16,3308,5000,results/ablation/wo_stage2__medmcqa__llama.jsonl.gz,results/notebook_outputs/evaluation.ipynb cell 11
+ablation,w/o Stage 2,medmcqa,Qwen2.5-7B,accuracy,59.02,2951,5000,results/ablation/wo_stage2__medmcqa__qwen.jsonl.gz,results/notebook_outputs/evaluation.ipynb cell 13
+ablation,w/o Stage 2,medqa,Llama3.1-8B,accuracy,51.46,2573,5000,results/ablation/wo_stage2__medqa__llama.jsonl.gz,results/notebook_outputs/evaluation.ipynb cell 12
+ablation,w/o Stage 2,medqa,Qwen2.5-7B,accuracy,41.38,2069,5000,results/ablation/wo_stage2__medqa__qwen.jsonl.gz,results/notebook_outputs/evaluation.ipynb cell 14
+ablation,w/o Stage 1 & 2,medmcqa,Qwen2.5-7B,accuracy,54.04,2702,5000,results/main_table/medmcqa/naive_rag__qwen.jsonl.gz,results/notebook_outputs/evaluation.ipynb cell 9
+ablation,w/o Stage 1 & 2,medmcqa,Llama3.1-8B,accuracy,62.50,3125,5000,results/main_table/medmcqa/naive_rag__llama.jsonl.gz,results/notebook_outputs/evaluation.ipynb cell 7
+ablation,w/o Stage 1 & 2,medqa,Qwen2.5-7B,accuracy,40.10,2005,5000,results/main_table/medqa/naive_rag__qwen.jsonl.gz,results/notebook_outputs/evaluation.ipynb cell 10
+ablation,w/o Stage 1 & 2,medqa,Llama3.1-8B,accuracy,46.16,2308,5000,results/main_table/medqa/naive_rag__llama.jsonl.gz,results/notebook_outputs/evaluation.ipynb cell 8
+ablation,Ours,medmcqa,Qwen2.5-7B,accuracy,67.16,3358,5000,results/main_table/medmcqa/ours__qwen.jsonl.gz,results/main_table/medmcqa/ours__qwen.jsonl.gz (is_match)
+ablation,Ours,medmcqa,Llama3.1-8B,accuracy,70.44,3522,5000,results/main_table/medmcqa/ours__llama.jsonl.gz,results/main_table/medmcqa/ours__llama.jsonl.gz (is_match)
+ablation,Ours,medqa,Qwen2.5-7B,accuracy,57.38,2869,5000,results/main_table/medqa/ours__qwen.jsonl.gz,results/main_table/medqa/ours__qwen.jsonl.gz (is_match)
+ablation,Ours,medqa,Llama3.1-8B,accuracy,57.12,2856,5000,results/main_table/medqa/ours__llama.jsonl.gz,results/main_table/medqa/ours__llama.jsonl.gz (is_match)
+classifier,FLARE (Llama3.1-8B),medmcqa,,recall_retrieval,88.63,,,results/classifier/flare__medmcqa.jsonl.gz,code/scripts/classifier_eval.py
+classifier,FLARE (Llama3.1-8B),medmcqa,,f1_retrieval,59.29,,,results/classifier/flare__medmcqa.jsonl.gz,code/scripts/classifier_eval.py
+classifier,FLARE (Llama3.1-8B),medmcqa,,recall_no_retrieval,48.87,,,results/classifier/flare__medmcqa.jsonl.gz,code/scripts/classifier_eval.py
+classifier,FLARE (Llama3.1-8B),medmcqa,,f1_no_retrieval,63.41,,,results/classifier/flare__medmcqa.jsonl.gz,code/scripts/classifier_eval.py
+classifier,Self-RAG-7B,medmcqa,,recall_retrieval,40.62,,,results/classifier/self_rag_7b__medmcqa.jsonl.gz,code/scripts/classifier_eval.py
+classifier,Self-RAG-7B,medmcqa,,f1_retrieval,47.01,,,results/classifier/self_rag_7b__medmcqa.jsonl.gz,code/scripts/classifier_eval.py
+classifier,Self-RAG-7B,medmcqa,,recall_no_retrieval,62.54,,,results/classifier/self_rag_7b__medmcqa.jsonl.gz,code/scripts/classifier_eval.py
+classifier,Self-RAG-7B,medmcqa,,f1_no_retrieval,54.02,,,results/classifier/self_rag_7b__medmcqa.jsonl.gz,code/scripts/classifier_eval.py
+classifier,Self-RAG-13B,medmcqa,,recall_retrieval,12.67,,,results/classifier/self_rag_13b__medmcqa.jsonl.gz,code/scripts/classifier_eval.py
+classifier,Self-RAG-13B,medmcqa,,f1_retrieval,20.76,,,results/classifier/self_rag_13b__medmcqa.jsonl.gz,code/scripts/classifier_eval.py
+classifier,Self-RAG-13B,medmcqa,,recall_no_retrieval,87.16,,,results/classifier/self_rag_13b__medmcqa.jsonl.gz,code/scripts/classifier_eval.py
+classifier,Self-RAG-13B,medmcqa,,f1_no_retrieval,56.84,,,results/classifier/self_rag_13b__medmcqa.jsonl.gz,code/scripts/classifier_eval.py
+classifier,Ours (Llama3.1-8B),medmcqa,,recall_retrieval,93.73,,,results/classifier/ours_llama__medmcqa/test.json.gz,code/scripts/classifier_eval.py
+classifier,Ours (Llama3.1-8B),medmcqa,,f1_retrieval,69.91,,,results/classifier/ours_llama__medmcqa/test.json.gz,code/scripts/classifier_eval.py
+classifier,Ours (Llama3.1-8B),medmcqa,,recall_no_retrieval,79.49,,,results/classifier/ours_llama__medmcqa/test.json.gz,code/scripts/classifier_eval.py
+classifier,Ours (Llama3.1-8B),medmcqa,,f1_no_retrieval,79.78,,,results/classifier/ours_llama__medmcqa/test.json.gz,code/scripts/classifier_eval.py
+classifier,Ours (Qwen2.5-7B),medmcqa,,recall_retrieval,82.46,,,results/classifier/ours_qwen__medmcqa/test.json.gz,code/scripts/classifier_eval.py
+classifier,Ours (Qwen2.5-7B),medmcqa,,f1_retrieval,60.32,,,results/classifier/ours_qwen__medmcqa/test.json.gz,code/scripts/classifier_eval.py
+classifier,Ours (Qwen2.5-7B),medmcqa,,recall_no_retrieval,46.46,,,results/classifier/ours_qwen__medmcqa/test.json.gz,code/scripts/classifier_eval.py
+classifier,Ours (Qwen2.5-7B),medmcqa,,f1_no_retrieval,59.26,,,results/classifier/ours_qwen__medmcqa/test.json.gz,code/scripts/classifier_eval.py
+classifier,FLARE (Llama3.1-8B),medqa,,recall_retrieval,92.80,,,results/classifier/flare__medqa.jsonl.gz,code/scripts/classifier_eval.py
+classifier,FLARE (Llama3.1-8B),medqa,,f1_retrieval,59.18,,,results/classifier/flare__medqa.jsonl.gz,code/scripts/classifier_eval.py
+classifier,FLARE (Llama3.1-8B),medqa,,recall_no_retrieval,21.33,,,results/classifier/flare__medqa.jsonl.gz,code/scripts/classifier_eval.py
+classifier,FLARE (Llama3.1-8B),medqa,,f1_no_retrieval,33.86,,,results/classifier/flare__medqa.jsonl.gz,code/scripts/classifier_eval.py
+classifier,Self-RAG-7B,medqa,,recall_retrieval,43.13,,,results/classifier/self_rag_7b__medqa.jsonl.gz,code/scripts/classifier_eval.py
+classifier,Self-RAG-7B,medqa,,f1_retrieval,53.72,,,results/classifier/self_rag_7b__medqa.jsonl.gz,code/scripts/classifier_eval.py
+classifier,Self-RAG-7B,medqa,,recall_no_retrieval,50.19,,,results/classifier/self_rag_7b__medqa.jsonl.gz,code/scripts/classifier_eval.py
+classifier,Self-RAG-7B,medqa,,f1_no_retrieval,32.12,,,results/classifier/self_rag_7b__medqa.jsonl.gz,code/scripts/classifier_eval.py
+classifier,Self-RAG-13B,medqa,,recall_retrieval,2.54,,,results/classifier/self_rag_13b__medqa.jsonl.gz,code/scripts/classifier_eval.py
+classifier,Self-RAG-13B,medqa,,f1_retrieval,4.90,,,results/classifier/self_rag_13b__medqa.jsonl.gz,code/scripts/classifier_eval.py
+classifier,Self-RAG-13B,medqa,,recall_no_retrieval,97.79,,,results/classifier/self_rag_13b__medqa.jsonl.gz,code/scripts/classifier_eval.py
+classifier,Self-RAG-13B,medqa,,f1_no_retrieval,45.78,,,results/classifier/self_rag_13b__medqa.jsonl.gz,code/scripts/classifier_eval.py
+classifier,Ours (Llama3.1-8B),medqa,,recall_retrieval,93.35,,,results/classifier/ours_llama__medqa/test.json.gz,code/scripts/classifier_eval.py
+classifier,Ours (Llama3.1-8B),medqa,,f1_retrieval,64.45,,,results/classifier/ours_llama__medqa/test.json.gz,code/scripts/classifier_eval.py
+classifier,Ours (Llama3.1-8B),medqa,,recall_no_retrieval,22.84,,,results/classifier/ours_llama__medqa/test.json.gz,code/scripts/classifier_eval.py
+classifier,Ours (Llama3.1-8B),medqa,,f1_no_retrieval,35.64,,,results/classifier/ours_llama__medqa/test.json.gz,code/scripts/classifier_eval.py
+classifier,Ours (Qwen2.5-7B),medqa,,recall_retrieval,90.55,,,results/classifier/ours_qwen__medqa/test.json.gz,code/scripts/classifier_eval.py
+classifier,Ours (Qwen2.5-7B),medqa,,f1_retrieval,66.58,,,results/classifier/ours_qwen__medqa/test.json.gz,code/scripts/classifier_eval.py
+classifier,Ours (Qwen2.5-7B),medqa,,recall_no_retrieval,25.90,,,results/classifier/ours_qwen__medqa/test.json.gz,code/scripts/classifier_eval.py
+classifier,Ours (Qwen2.5-7B),medqa,,f1_no_retrieval,38.51,,,results/classifier/ours_qwen__medqa/test.json.gz,code/scripts/classifier_eval.py
+hyperparameter,"Ours (alpha_pos=0.1, alpha_neg=0.05)",medmcqa,Qwen2.5-7B,accuracy,67.12,3356,5000,results/hyperparameter/medmcqa_qwen_pos_0.1_neg_0.05.jsonl.gz,results/hyperparameter/medmcqa_qwen_pos_0.1_neg_0.05.jsonl.gz (is_match)
+hyperparameter,"Ours (alpha_pos=0.1, alpha_neg=0.1)",medmcqa,Qwen2.5-7B,accuracy,66.66,3333,5000,results/hyperparameter/medmcqa_qwen_pos_0.1_neg_0.1.jsonl.gz,results/hyperparameter/medmcqa_qwen_pos_0.1_neg_0.1.jsonl.gz (is_match)
+hyperparameter,"Ours (alpha_pos=0.1, alpha_neg=0.2)",medmcqa,Qwen2.5-7B,accuracy,67.16,3358,5000,results/hyperparameter/medmcqa_qwen_pos_0.1_neg_0.2.jsonl.gz,results/hyperparameter/medmcqa_qwen_pos_0.1_neg_0.2.jsonl.gz (is_match)
+hyperparameter,"Ours (alpha_pos=0.5, alpha_neg=0.05)",medmcqa,Qwen2.5-7B,accuracy,67.00,3350,5000,results/hyperparameter/medmcqa_qwen_pos_0.5_neg_0.05.jsonl.gz,results/hyperparameter/medmcqa_qwen_pos_0.5_neg_0.05.jsonl.gz (is_match)
+hyperparameter,"Ours (alpha_pos=0.5, alpha_neg=0.1)",medmcqa,Qwen2.5-7B,accuracy,67.08,3354,5000,results/hyperparameter/medmcqa_qwen_pos_0.5_neg_0.1.jsonl.gz,results/hyperparameter/medmcqa_qwen_pos_0.5_neg_0.1.jsonl.gz (is_match)
+hyperparameter,"Ours (alpha_pos=0.5, alpha_neg=0.2)",medmcqa,Qwen2.5-7B,accuracy,67.16,3358,5000,results/hyperparameter/medmcqa_qwen_pos_0.5_neg_0.2.jsonl.gz,results/hyperparameter/medmcqa_qwen_pos_0.5_neg_0.2.jsonl.gz (is_match)
+hyperparameter,"Ours (alpha_pos=1.0, alpha_neg=0.05)",medmcqa,Qwen2.5-7B,accuracy,66.98,3349,5000,results/hyperparameter/medmcqa_qwen_pos_1.0_neg_0.05.jsonl.gz,results/hyperparameter/medmcqa_qwen_pos_1.0_neg_0.05.jsonl.gz (is_match)
+hyperparameter,"Ours (alpha_pos=1.0, alpha_neg=0.1)",medmcqa,Qwen2.5-7B,accuracy,67.08,3354,5000,results/hyperparameter/medmcqa_qwen_pos_1.0_neg_0.1.jsonl.gz,results/hyperparameter/medmcqa_qwen_pos_1.0_neg_0.1.jsonl.gz (is_match)
+hyperparameter,"Ours (alpha_pos=1.0, alpha_neg=0.2)",medmcqa,Qwen2.5-7B,accuracy,67.08,3354,5000,results/hyperparameter/medmcqa_qwen_pos_1.0_neg_0.2.jsonl.gz,results/hyperparameter/medmcqa_qwen_pos_1.0_neg_0.2.jsonl.gz (is_match)
+hyperparameter,"Ours (alpha_pos=0.1, alpha_neg=0.05)",medmcqa,Llama3.1-8B,accuracy,70.10,3505,5000,results/hyperparameter/medmcqa_llama_pos_0.1_neg_0.05.jsonl.gz,results/hyperparameter/medmcqa_llama_pos_0.1_neg_0.05.jsonl.gz (is_match)
+hyperparameter,"Ours (alpha_pos=0.1, alpha_neg=0.1)",medmcqa,Llama3.1-8B,accuracy,70.28,3514,5000,results/hyperparameter/medmcqa_llama_pos_0.1_neg_0.1.jsonl.gz,results/hyperparameter/medmcqa_llama_pos_0.1_neg_0.1.jsonl.gz (is_match)
+hyperparameter,"Ours (alpha_pos=0.1, alpha_neg=0.2)",medmcqa,Llama3.1-8B,accuracy,70.38,3519,5000,results/hyperparameter/medmcqa_llama_pos_0.1_neg_0.2.jsonl.gz,results/hyperparameter/medmcqa_llama_pos_0.1_neg_0.2.jsonl.gz (is_match)
+hyperparameter,"Ours (alpha_pos=0.5, alpha_neg=0.05)",medmcqa,Llama3.1-8B,accuracy,70.22,3511,5000,results/hyperparameter/medmcqa_llama_pos_0.5_neg_0.05.jsonl.gz,results/hyperparameter/medmcqa_llama_pos_0.5_neg_0.05.jsonl.gz (is_match)
+hyperparameter,"Ours (alpha_pos=0.5, alpha_neg=0.1)",medmcqa,Llama3.1-8B,accuracy,70.40,3520,5000,results/hyperparameter/medmcqa_llama_pos_0.5_neg_0.1.jsonl.gz,results/hyperparameter/medmcqa_llama_pos_0.5_neg_0.1.jsonl.gz (is_match)
+hyperparameter,"Ours (alpha_pos=0.5, alpha_neg=0.2)",medmcqa,Llama3.1-8B,accuracy,70.40,3520,5000,results/hyperparameter/medmcqa_llama_pos_0.5_neg_0.2.jsonl.gz,results/hyperparameter/medmcqa_llama_pos_0.5_neg_0.2.jsonl.gz (is_match)
+hyperparameter,"Ours (alpha_pos=1.0, alpha_neg=0.05)",medmcqa,Llama3.1-8B,accuracy,70.36,3518,5000,results/hyperparameter/medmcqa_llama_pos_1.0_neg_0.05.jsonl.gz,results/hyperparameter/medmcqa_llama_pos_1.0_neg_0.05.jsonl.gz (is_match)
+hyperparameter,"Ours (alpha_pos=1.0, alpha_neg=0.1)",medmcqa,Llama3.1-8B,accuracy,70.40,3520,5000,results/hyperparameter/medmcqa_llama_pos_1.0_neg_0.1.jsonl.gz,results/hyperparameter/medmcqa_llama_pos_1.0_neg_0.1.jsonl.gz (is_match)
+hyperparameter,"Ours (alpha_pos=1.0, alpha_neg=0.2)",medmcqa,Llama3.1-8B,accuracy,70.44,3522,5000,results/hyperparameter/medmcqa_llama_pos_1.0_neg_0.2.jsonl.gz,results/hyperparameter/medmcqa_llama_pos_1.0_neg_0.2.jsonl.gz (is_match)
+hyperparameter,"Ours (alpha_pos=0.1, alpha_neg=0.05)",medqa,Qwen2.5-7B,accuracy,57.38,2869,5000,results/hyperparameter/medqa_qwen_pos_0.1_neg_0.05.jsonl.gz,results/hyperparameter/medqa_qwen_pos_0.1_neg_0.05.jsonl.gz (is_match)
+hyperparameter,"Ours (alpha_pos=0.1, alpha_neg=0.1)",medqa,Qwen2.5-7B,accuracy,57.30,2865,5000,results/hyperparameter/medqa_qwen_pos_0.1_neg_0.1.jsonl.gz,results/hyperparameter/medqa_qwen_pos_0.1_neg_0.1.jsonl.gz (is_match)
+hyperparameter,"Ours (alpha_pos=0.1, alpha_neg=0.2)",medqa,Qwen2.5-7B,accuracy,57.26,2863,5000,results/hyperparameter/medqa_qwen_pos_0.1_neg_0.2.jsonl.gz,results/hyperparameter/medqa_qwen_pos_0.1_neg_0.2.jsonl.gz (is_match)
+hyperparameter,"Ours (alpha_pos=0.5, alpha_neg=0.05)",medqa,Qwen2.5-7B,accuracy,57.32,2866,5000,results/hyperparameter/medqa_qwen_pos_0.5_neg_0.05.jsonl.gz,results/hyperparameter/medqa_qwen_pos_0.5_neg_0.05.jsonl.gz (is_match)
+hyperparameter,"Ours (alpha_pos=0.5, alpha_neg=0.1)",medqa,Qwen2.5-7B,accuracy,57.24,2862,5000,results/hyperparameter/medqa_qwen_pos_0.5_neg_0.1.jsonl.gz,results/hyperparameter/medqa_qwen_pos_0.5_neg_0.1.jsonl.gz (is_match)
+hyperparameter,"Ours (alpha_pos=0.5, alpha_neg=0.2)",medqa,Qwen2.5-7B,accuracy,57.30,2865,5000,results/hyperparameter/medqa_qwen_pos_0.5_neg_0.2.jsonl.gz,results/hyperparameter/medqa_qwen_pos_0.5_neg_0.2.jsonl.gz (is_match)
+hyperparameter,"Ours (alpha_pos=1.0, alpha_neg=0.05)",medqa,Qwen2.5-7B,accuracy,57.28,2864,5000,results/hyperparameter/medqa_qwen_pos_1.0_neg_0.05.jsonl.gz,results/hyperparameter/medqa_qwen_pos_1.0_neg_0.05.jsonl.gz (is_match)
+hyperparameter,"Ours (alpha_pos=1.0, alpha_neg=0.1)",medqa,Qwen2.5-7B,accuracy,57.30,2865,5000,results/hyperparameter/medqa_qwen_pos_1.0_neg_0.1.jsonl.gz,results/hyperparameter/medqa_qwen_pos_1.0_neg_0.1.jsonl.gz (is_match)
+hyperparameter,"Ours (alpha_pos=1.0, alpha_neg=0.2)",medqa,Qwen2.5-7B,accuracy,57.14,2857,5000,results/hyperparameter/medqa_qwen_pos_1.0_neg_0.2.jsonl.gz,results/hyperparameter/medqa_qwen_pos_1.0_neg_0.2.jsonl.gz (is_match)
+hyperparameter,"Ours (alpha_pos=0.1, alpha_neg=0.05)",medqa,Llama3.1-8B,accuracy,56.42,2821,5000,results/hyperparameter/medqa_llama_pos_0.1_neg_0.05.jsonl.gz,results/hyperparameter/medqa_llama_pos_0.1_neg_0.05.jsonl.gz (is_match)
+hyperparameter,"Ours (alpha_pos=0.1, alpha_neg=0.1)",medqa,Llama3.1-8B,accuracy,56.58,2829,5000,results/hyperparameter/medqa_llama_pos_0.1_neg_0.1.jsonl.gz,results/hyperparameter/medqa_llama_pos_0.1_neg_0.1.jsonl.gz (is_match)
+hyperparameter,"Ours (alpha_pos=0.1, alpha_neg=0.2)",medqa,Llama3.1-8B,accuracy,56.44,2822,5000,results/hyperparameter/medqa_llama_pos_0.1_neg_0.2.jsonl.gz,results/hyperparameter/medqa_llama_pos_0.1_neg_0.2.jsonl.gz (is_match)
+hyperparameter,"Ours (alpha_pos=0.5, alpha_neg=0.05)",medqa,Llama3.1-8B,accuracy,56.36,2818,5000,results/hyperparameter/medqa_llama_pos_0.5_neg_0.05.jsonl.gz,results/hyperparameter/medqa_llama_pos_0.5_neg_0.05.jsonl.gz (is_match)
+hyperparameter,"Ours (alpha_pos=0.5, alpha_neg=0.1)",medqa,Llama3.1-8B,accuracy,56.64,2832,5000,results/hyperparameter/medqa_llama_pos_0.5_neg_0.1.jsonl.gz,results/hyperparameter/medqa_llama_pos_0.5_neg_0.1.jsonl.gz (is_match)
+hyperparameter,"Ours (alpha_pos=0.5, alpha_neg=0.2)",medqa,Llama3.1-8B,accuracy,56.62,2831,5000,results/hyperparameter/medqa_llama_pos_0.5_neg_0.2.jsonl.gz,results/hyperparameter/medqa_llama_pos_0.5_neg_0.2.jsonl.gz (is_match)
+hyperparameter,"Ours (alpha_pos=1.0, alpha_neg=0.05)",medqa,Llama3.1-8B,accuracy,56.96,2848,5000,results/hyperparameter/medqa_llama_pos_1.0_neg_0.05.jsonl.gz,results/hyperparameter/medqa_llama_pos_1.0_neg_0.05.jsonl.gz (is_match)
+hyperparameter,"Ours (alpha_pos=1.0, alpha_neg=0.1)",medqa,Llama3.1-8B,accuracy,57.08,2854,5000,results/hyperparameter/medqa_llama_pos_1.0_neg_0.1.jsonl.gz,results/hyperparameter/medqa_llama_pos_1.0_neg_0.1.jsonl.gz (is_match)
+hyperparameter,"Ours (alpha_pos=1.0, alpha_neg=0.2)",medqa,Llama3.1-8B,accuracy,57.12,2856,5000,results/hyperparameter/medqa_llama_pos_1.0_neg_0.2.jsonl.gz,results/hyperparameter/medqa_llama_pos_1.0_neg_0.2.jsonl.gz (is_match)
+hyperparameter,"Ours (alpha_pos=0.1, alpha_neg=0.05)",medexqa,Qwen2.5-7B,accuracy,74.36,699,940,results/hyperparameter/medexqa_qwen_pos_0.1_neg_0.05.jsonl.gz,results/hyperparameter/medexqa_qwen_pos_0.1_neg_0.05.jsonl.gz (is_match)
+hyperparameter,"Ours (alpha_pos=0.1, alpha_neg=0.1)",medexqa,Qwen2.5-7B,accuracy,74.26,698,940,results/hyperparameter/medexqa_qwen_pos_0.1_neg_0.1.jsonl.gz,results/hyperparameter/medexqa_qwen_pos_0.1_neg_0.1.jsonl.gz (is_match)
+hyperparameter,"Ours (alpha_pos=0.1, alpha_neg=0.2)",medexqa,Qwen2.5-7B,accuracy,74.26,698,940,results/hyperparameter/medexqa_qwen_pos_0.1_neg_0.2.jsonl.gz,results/hyperparameter/medexqa_qwen_pos_0.1_neg_0.2.jsonl.gz (is_match)
+hyperparameter,"Ours (alpha_pos=0.5, alpha_neg=0.05)",medexqa,Qwen2.5-7B,accuracy,74.57,701,940,results/hyperparameter/medexqa_qwen_pos_0.5_neg_0.05.jsonl.gz,results/hyperparameter/medexqa_qwen_pos_0.5_neg_0.05.jsonl.gz (is_match)
+hyperparameter,"Ours (alpha_pos=0.5, alpha_neg=0.1)",medexqa,Qwen2.5-7B,accuracy,74.47,700,940,results/hyperparameter/medexqa_qwen_pos_0.5_neg_0.1.jsonl.gz,results/hyperparameter/medexqa_qwen_pos_0.5_neg_0.1.jsonl.gz (is_match)
+hyperparameter,"Ours (alpha_pos=0.5, alpha_neg=0.2)",medexqa,Qwen2.5-7B,accuracy,74.68,702,940,results/hyperparameter/medexqa_qwen_pos_0.5_neg_0.2.jsonl.gz,results/hyperparameter/medexqa_qwen_pos_0.5_neg_0.2.jsonl.gz (is_match)
+hyperparameter,"Ours (alpha_pos=1.0, alpha_neg=0.05)",medexqa,Qwen2.5-7B,accuracy,74.47,700,940,results/hyperparameter/medexqa_qwen_pos_1.0_neg_0.05.jsonl.gz,results/hyperparameter/medexqa_qwen_pos_1.0_neg_0.05.jsonl.gz (is_match)
+hyperparameter,"Ours (alpha_pos=1.0, alpha_neg=0.1)",medexqa,Qwen2.5-7B,accuracy,74.36,699,940,results/hyperparameter/medexqa_qwen_pos_1.0_neg_0.1.jsonl.gz,results/hyperparameter/medexqa_qwen_pos_1.0_neg_0.1.jsonl.gz (is_match)
+hyperparameter,"Ours (alpha_pos=1.0, alpha_neg=0.2)",medexqa,Qwen2.5-7B,accuracy,74.47,700,940,results/hyperparameter/medexqa_qwen_pos_1.0_neg_0.2.jsonl.gz,results/hyperparameter/medexqa_qwen_pos_1.0_neg_0.2.jsonl.gz (is_match)
+hyperparameter,"Ours (alpha_pos=0.1, alpha_neg=0.05)",medexqa,Llama3.1-8B,accuracy,70.11,659,940,results/hyperparameter/medexqa_llama_pos_0.1_neg_0.05.jsonl.gz,results/hyperparameter/medexqa_llama_pos_0.1_neg_0.05.jsonl.gz (is_match)
+hyperparameter,"Ours (alpha_pos=0.1, alpha_neg=0.1)",medexqa,Llama3.1-8B,accuracy,70.00,658,940,results/hyperparameter/medexqa_llama_pos_0.1_neg_0.1.jsonl.gz,results/hyperparameter/medexqa_llama_pos_0.1_neg_0.1.jsonl.gz (is_match)
+hyperparameter,"Ours (alpha_pos=0.1, alpha_neg=0.2)",medexqa,Llama3.1-8B,accuracy,70.00,658,940,results/hyperparameter/medexqa_llama_pos_0.1_neg_0.2.jsonl.gz,results/hyperparameter/medexqa_llama_pos_0.1_neg_0.2.jsonl.gz (is_match)
+hyperparameter,"Ours (alpha_pos=0.5, alpha_neg=0.05)",medexqa,Llama3.1-8B,accuracy,70.64,664,940,results/hyperparameter/medexqa_llama_pos_0.5_neg_0.05.jsonl.gz,results/hyperparameter/medexqa_llama_pos_0.5_neg_0.05.jsonl.gz (is_match)
+hyperparameter,"Ours (alpha_pos=0.5, alpha_neg=0.1)",medexqa,Llama3.1-8B,accuracy,70.64,664,940,results/hyperparameter/medexqa_llama_pos_0.5_neg_0.1.jsonl.gz,results/hyperparameter/medexqa_llama_pos_0.5_neg_0.1.jsonl.gz (is_match)
+hyperparameter,"Ours (alpha_pos=0.5, alpha_neg=0.2)",medexqa,Llama3.1-8B,accuracy,70.53,663,940,results/hyperparameter/medexqa_llama_pos_0.5_neg_0.2.jsonl.gz,results/hyperparameter/medexqa_llama_pos_0.5_neg_0.2.jsonl.gz (is_match)
+hyperparameter,"Ours (alpha_pos=1.0, alpha_neg=0.05)",medexqa,Llama3.1-8B,accuracy,70.64,664,940,results/hyperparameter/medexqa_llama_pos_1.0_neg_0.05.jsonl.gz,results/hyperparameter/medexqa_llama_pos_1.0_neg_0.05.jsonl.gz (is_match)
+hyperparameter,"Ours (alpha_pos=1.0, alpha_neg=0.1)",medexqa,Llama3.1-8B,accuracy,70.64,664,940,results/hyperparameter/medexqa_llama_pos_1.0_neg_0.1.jsonl.gz,results/hyperparameter/medexqa_llama_pos_1.0_neg_0.1.jsonl.gz (is_match)
+hyperparameter,"Ours (alpha_pos=1.0, alpha_neg=0.2)",medexqa,Llama3.1-8B,accuracy,70.74,665,940,results/hyperparameter/medexqa_llama_pos_1.0_neg_0.2.jsonl.gz,results/hyperparameter/medexqa_llama_pos_1.0_neg_0.2.jsonl.gz (is_match)
+hyperparameter,"Ours (alpha_pos=0.1, alpha_neg=0.05)",mmlu,Qwen2.5-7B,accuracy,73.60,1207,1640,results/hyperparameter/mmlu_qwen_pos_0.1_neg_0.05.jsonl.gz,results/hyperparameter/mmlu_qwen_pos_0.1_neg_0.05.jsonl.gz (is_match)
+hyperparameter,"Ours (alpha_pos=0.1, alpha_neg=0.1)",mmlu,Qwen2.5-7B,accuracy,73.60,1207,1640,results/hyperparameter/mmlu_qwen_pos_0.1_neg_0.1.jsonl.gz,results/hyperparameter/mmlu_qwen_pos_0.1_neg_0.1.jsonl.gz (is_match)
+hyperparameter,"Ours (alpha_pos=0.1, alpha_neg=0.2)",mmlu,Qwen2.5-7B,accuracy,73.60,1207,1640,results/hyperparameter/mmlu_qwen_pos_0.1_neg_0.2.jsonl.gz,results/hyperparameter/mmlu_qwen_pos_0.1_neg_0.2.jsonl.gz (is_match)
+hyperparameter,"Ours (alpha_pos=0.5, alpha_neg=0.05)",mmlu,Qwen2.5-7B,accuracy,73.84,1211,1640,results/hyperparameter/mmlu_qwen_pos_0.5_neg_0.05.jsonl.gz,results/hyperparameter/mmlu_qwen_pos_0.5_neg_0.05.jsonl.gz (is_match)
+hyperparameter,"Ours (alpha_pos=0.5, alpha_neg=0.1)",mmlu,Qwen2.5-7B,accuracy,73.84,1211,1640,results/hyperparameter/mmlu_qwen_pos_0.5_neg_0.1.jsonl.gz,results/hyperparameter/mmlu_qwen_pos_0.5_neg_0.1.jsonl.gz (is_match)
+hyperparameter,"Ours (alpha_pos=0.5, alpha_neg=0.2)",mmlu,Qwen2.5-7B,accuracy,73.84,1211,1640,results/hyperparameter/mmlu_qwen_pos_0.5_neg_0.2.jsonl.gz,results/hyperparameter/mmlu_qwen_pos_0.5_neg_0.2.jsonl.gz (is_match)
+hyperparameter,"Ours (alpha_pos=1.0, alpha_neg=0.05)",mmlu,Qwen2.5-7B,accuracy,73.84,1211,1640,results/hyperparameter/mmlu_qwen_pos_1.0_neg_0.05.jsonl.gz,results/hyperparameter/mmlu_qwen_pos_1.0_neg_0.05.jsonl.gz (is_match)
+hyperparameter,"Ours (alpha_pos=1.0, alpha_neg=0.1)",mmlu,Qwen2.5-7B,accuracy,73.84,1211,1640,results/hyperparameter/mmlu_qwen_pos_1.0_neg_0.1.jsonl.gz,results/hyperparameter/mmlu_qwen_pos_1.0_neg_0.1.jsonl.gz (is_match)
+hyperparameter,"Ours (alpha_pos=1.0, alpha_neg=0.2)",mmlu,Qwen2.5-7B,accuracy,73.84,1211,1640,results/hyperparameter/mmlu_qwen_pos_1.0_neg_0.2.jsonl.gz,results/hyperparameter/mmlu_qwen_pos_1.0_neg_0.2.jsonl.gz (is_match)
+hyperparameter,"Ours (alpha_pos=0.1, alpha_neg=0.05)",mmlu,Llama3.1-8B,accuracy,69.70,1143,1640,results/hyperparameter/mmlu_llama_pos_0.1_neg_0.05.jsonl.gz,results/hyperparameter/mmlu_llama_pos_0.1_neg_0.05.jsonl.gz (is_match)
+hyperparameter,"Ours (alpha_pos=0.1, alpha_neg=0.1)",mmlu,Llama3.1-8B,accuracy,69.63,1142,1640,results/hyperparameter/mmlu_llama_pos_0.1_neg_0.1.jsonl.gz,results/hyperparameter/mmlu_llama_pos_0.1_neg_0.1.jsonl.gz (is_match)
+hyperparameter,"Ours (alpha_pos=0.1, alpha_neg=0.2)",mmlu,Llama3.1-8B,accuracy,69.57,1141,1640,results/hyperparameter/mmlu_llama_pos_0.1_neg_0.2.jsonl.gz,results/hyperparameter/mmlu_llama_pos_0.1_neg_0.2.jsonl.gz (is_match)
+hyperparameter,"Ours (alpha_pos=0.5, alpha_neg=0.05)",mmlu,Llama3.1-8B,accuracy,69.88,1146,1640,results/hyperparameter/mmlu_llama_pos_0.5_neg_0.05.jsonl.gz,results/hyperparameter/mmlu_llama_pos_0.5_neg_0.05.jsonl.gz (is_match)
+hyperparameter,"Ours (alpha_pos=0.5, alpha_neg=0.1)",mmlu,Llama3.1-8B,accuracy,69.82,1145,1640,results/hyperparameter/mmlu_llama_pos_0.5_neg_0.1.jsonl.gz,results/hyperparameter/mmlu_llama_pos_0.5_neg_0.1.jsonl.gz (is_match)
+hyperparameter,"Ours (alpha_pos=0.5, alpha_neg=0.2)",mmlu,Llama3.1-8B,accuracy,69.76,1144,1640,results/hyperparameter/mmlu_llama_pos_0.5_neg_0.2.jsonl.gz,results/hyperparameter/mmlu_llama_pos_0.5_neg_0.2.jsonl.gz (is_match)
+hyperparameter,"Ours (alpha_pos=1.0, alpha_neg=0.05)",mmlu,Llama3.1-8B,accuracy,70.37,1154,1640,results/hyperparameter/mmlu_llama_pos_1.0_neg_0.05.jsonl.gz,results/hyperparameter/mmlu_llama_pos_1.0_neg_0.05.jsonl.gz (is_match)
+hyperparameter,"Ours (alpha_pos=1.0, alpha_neg=0.1)",mmlu,Llama3.1-8B,accuracy,70.30,1153,1640,results/hyperparameter/mmlu_llama_pos_1.0_neg_0.1.jsonl.gz,results/hyperparameter/mmlu_llama_pos_1.0_neg_0.1.jsonl.gz (is_match)
+hyperparameter,"Ours (alpha_pos=1.0, alpha_neg=0.2)",mmlu,Llama3.1-8B,accuracy,70.24,1152,1640,results/hyperparameter/mmlu_llama_pos_1.0_neg_0.2.jsonl.gz,results/hyperparameter/mmlu_llama_pos_1.0_neg_0.2.jsonl.gz (is_match)

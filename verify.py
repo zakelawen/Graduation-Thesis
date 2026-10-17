@@ -3,8 +3,10 @@ import gzip
 import json
 import os
 import re
+import sys
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
+sys.path.insert(0, os.path.join(ROOT, "code", "scripts"))
 
 
 def count(path, field):
@@ -26,8 +28,11 @@ def notebook_text(path, k):
     return text
 
 
-def check(row):
+def check(row, classifier):
     value = float(row["value"])
+    if row["result"] == "code/scripts/classifier_eval.py":
+        got = classifier[(row["dataset"], row["method"])][row["metric"]]
+        return bool(abs(got - value) < 0.005), f"{got:.2f}"
     m = re.match(r"(.+\.jsonl\.gz) \((\w+)\)$", row["result"])
     if m:
         c, n = count(os.path.join(ROOT, m.group(1)), m.group(2))
@@ -42,14 +47,16 @@ def check(row):
 
 
 def main():
+    import classifier_eval
+    classifier = classifier_eval.evaluate()
     rows = list(csv.DictReader(open(os.path.join(ROOT, "results", "index.csv"), encoding="utf-8-sig")))
     passed = failed = 0
     for row in rows:
-        ok, detail = check(row)
+        ok, detail = check(row, classifier)
         status = "OK" if ok else ("--" if ok is None else "FAIL")
         passed += ok is True
         failed += ok is False
-        print(f"{status:4s} {row['table']:8s} {row['method']:16s} {row['dataset']:8s} {row['model']:12s} {row['value']:>6s}  {detail}")
+        print(f"{status:4s} {row['table']:14s} {row['method']:38s} {row['dataset']:8s} {row['model']:12s} {row['metric']:20s} {row['value']:>6s}  {detail}")
     print(f"\n{passed} OK, {failed} FAIL, {len(rows) - passed - failed} without data file")
 
 

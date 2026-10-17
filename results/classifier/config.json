@@ -1,0 +1,95 @@
+[
+ {
+  "dataset": "medmcqa",
+  "method": "FLARE (Llama3.1-8B)",
+  "type": "decision",
+  "file": "results/classifier/flare__medmcqa.jsonl.gz",
+  "label_field": "is_correct",
+  "label_needs_value": "0",
+  "pred_field": "needs_retrieval",
+  "pred_needs_value": "True"
+ },
+ {
+  "dataset": "medmcqa",
+  "method": "Self-RAG-7B",
+  "type": "decision",
+  "file": "results/classifier/self_rag_7b__medmcqa.jsonl.gz",
+  "label_field": "evaluation_label",
+  "label_needs_value": "0",
+  "pred_field": "retrieval_decision",
+  "pred_needs_value": "Retrieve"
+ },
+ {
+  "dataset": "medmcqa",
+  "method": "Self-RAG-13B",
+  "type": "decision",
+  "file": "results/classifier/self_rag_13b__medmcqa.jsonl.gz",
+  "label_field": "evaluation_label",
+  "label_needs_value": "0",
+  "pred_field": "retrieval_decision",
+  "pred_needs_value": "Retrieve"
+ },
+ {
+  "dataset": "medmcqa",
+  "method": "Ours (Llama3.1-8B)",
+  "type": "classifier",
+  "validation": "results/classifier/ours_llama__medmcqa/validation.json.gz",
+  "test": "results/classifier/ours_llama__medmcqa/test.json.gz",
+  "classifier": "results/classifier/ours_llama__medmcqa/classifier.joblib",
+  "separate_no_retrieval_threshold": true
+ },
+ {
+  "dataset": "medmcqa",
+  "method": "Ours (Qwen2.5-7B)",
+  "type": "classifier",
+  "validation": "results/classifier/ours_qwen__medmcqa/validation.json.gz",
+  "test": "results/classifier/ours_qwen__medmcqa/test.json.gz",
+  "classifier": "results/classifier/ours_qwen__medmcqa/classifier.joblib"
+ },
+ {
+  "dataset": "medqa",
+  "method": "FLARE (Llama3.1-8B)",
+  "type": "decision",
+  "file": "results/classifier/flare__medqa.jsonl.gz",
+  "label_field": "is_correct",
+  "label_needs_value": "0",
+  "pred_field": "needs_retrieval",
+  "pred_needs_value": "True"
+ },
+ {
+  "dataset": "medqa",
+  "method": "Self-RAG-7B",
+  "type": "decision",
+  "file": "results/classifier/self_rag_7b__medqa.jsonl.gz",
+  "label_field": "evaluation_label",
+  "label_needs_value": "0",
+  "pred_field": "retrieval_decision",
+  "pred_needs_value": "Retrieve"
+ },
+ {
+  "dataset": "medqa",
+  "method": "Self-RAG-13B",
+  "type": "decision",
+  "file": "results/classifier/self_rag_13b__medqa.jsonl.gz",
+  "label_field": "evaluation_label",
+  "label_needs_value": "0",
+  "pred_field": "retrieval_decision",
+  "pred_needs_value": "Retrieve"
+ },
+ {
+  "dataset": "medqa",
+  "method": "Ours (Llama3.1-8B)",
+  "type": "classifier",
+  "validation": "results/classifier/ours_llama__medqa/validation.json.gz",
+  "test": "results/classifier/ours_llama__medqa/test.json.gz",
+  "classifier": "results/classifier/ours_llama__medqa/classifier.joblib"
+ },
+ {
+  "dataset": "medqa",
+  "method": "Ours (Qwen2.5-7B)",
+  "type": "classifier",
+  "validation": "results/classifier/ours_qwen__medqa/validation.json.gz",
+  "test": "results/classifier/ours_qwen__medqa/test.json.gz",
+  "classifier": "results/classifier/ours_qwen__medqa/classifier.joblib"
+ }
+]
