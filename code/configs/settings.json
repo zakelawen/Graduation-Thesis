@@ -1,0 +1,68 @@
+{
+  "models": {
+    "llama": "/home/qluai/.cache/huggingface/hub/models--meta-llama--Llama-3.1-8B-Instruct/snapshots/0e9e39f249a16976918f6564b8830bc894c89659",
+    "qwen": "/mnt/model/Qwen2.5-7B-Instruct"
+  },
+  "classifier": {
+    "llama": {
+      "model": "classifiers/mlp32_best_model.joblib",
+      "validation": "classifiers/llama_validation.json"
+    },
+    "qwen": {
+      "model": "classifiers/lr_qwen_best_model.joblib",
+      "validation": "classifiers/qwen_validation.json"
+    }
+  },
+  "d_seper_thresholds": {
+    "medmcqa": {
+      "llama": [
+        -0.1,
+        0.3
+      ],
+      "qwen": [
+        -0.1,
+        0.3
+      ]
+    },
+    "medqa": {
+      "llama": [
+        -0.1,
+        0.3
+      ],
+      "qwen": [
+        -0.1,
+        0.3
+      ]
+    },
+    "medexqa": {
+      "llama": [
+        -0.0458,
+        0.1622
+      ],
+      "qwen": [
+        -0.1666,
+        0.1055
+      ]
+    },
+    "mmlu": {
+      "llama": [
+        -0.0309,
+        0.1385
+      ],
+      "qwen": [
+        -0.1093,
+        0.0417
+      ]
+    }
+  },
+  "alpha_pos": [
+    0.1,
+    0.5,
+    1.0
+  ],
+  "alpha_neg": [
+    0.05,
+    0.1,
+    0.2
+  ]
+}
