@@ -101,8 +101,8 @@ classifier,Self-RAG-13B,medmcqa,,recall_no_retrieval,87.16,,,results/classifier/
 classifier,Self-RAG-13B,medmcqa,,f1_no_retrieval,56.84,,,results/classifier/self_rag_13b__medmcqa.jsonl.gz,code/scripts/classifier_eval.py
 classifier,Ours (Llama3.1-8B),medmcqa,,recall_retrieval,93.73,,,results/classifier/ours_llama__medmcqa/test.json.gz,code/scripts/classifier_eval.py
 classifier,Ours (Llama3.1-8B),medmcqa,,f1_retrieval,69.91,,,results/classifier/ours_llama__medmcqa/test.json.gz,code/scripts/classifier_eval.py
-classifier,Ours (Llama3.1-8B),medmcqa,,recall_no_retrieval,79.49,,,results/classifier/ours_llama__medmcqa/test.json.gz,code/scripts/classifier_eval.py
-classifier,Ours (Llama3.1-8B),medmcqa,,f1_no_retrieval,79.78,,,results/classifier/ours_llama__medmcqa/test.json.gz,code/scripts/classifier_eval.py
+classifier,Ours (Llama3.1-8B),medmcqa,,recall_no_retrieval,48.72,,,results/classifier/ours_llama__medmcqa/test.json.gz,code/scripts/classifier_eval.py
+classifier,Ours (Llama3.1-8B),medmcqa,,f1_no_retrieval,63.66,,,results/classifier/ours_llama__medmcqa/test.json.gz,code/scripts/classifier_eval.py
 classifier,Ours (Qwen2.5-7B),medmcqa,,recall_retrieval,82.46,,,results/classifier/ours_qwen__medmcqa/test.json.gz,code/scripts/classifier_eval.py
 classifier,Ours (Qwen2.5-7B),medmcqa,,f1_retrieval,60.32,,,results/classifier/ours_qwen__medmcqa/test.json.gz,code/scripts/classifier_eval.py
 classifier,Ours (Qwen2.5-7B),medmcqa,,recall_no_retrieval,46.46,,,results/classifier/ours_qwen__medmcqa/test.json.gz,code/scripts/classifier_eval.py

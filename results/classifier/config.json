@@ -35,8 +35,7 @@
   "type": "classifier",
   "validation": "results/classifier/ours_llama__medmcqa/validation.json.gz",
   "test": "results/classifier/ours_llama__medmcqa/test.json.gz",
-  "classifier": "results/classifier/ours_llama__medmcqa/classifier.joblib",
-  "separate_no_retrieval_threshold": true
+  "classifier": "results/classifier/ours_llama__medmcqa/classifier.joblib"
  },
  {
   "dataset": "medmcqa",

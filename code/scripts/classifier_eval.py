@@ -43,11 +43,7 @@ def classifier_row(row):
     s_test = model.predict_proba(np.array([d['normalized_truth_values'] for d in test]))[:, 1]
     y_need = (np.array([d['label'] for d in test]) == 0).astype(int)
     t_need = best_threshold(s_val, y_val, 0)
-    result = class_scores(y_need, (s_test < t_need).astype(int))
-    if row.get('separate_no_retrieval_threshold'):
-        t_no = best_threshold(s_val, y_val, 1)
-        result[2:] = class_scores(y_need, (s_test < t_no).astype(int))[2:]
-    return result
+    return class_scores(y_need, (s_test < t_need).astype(int))
 
 def evaluate():
     rows = json.load(open(os.path.join(ROOT, 'results', 'classifier', 'config.json'), encoding='utf-8'))
