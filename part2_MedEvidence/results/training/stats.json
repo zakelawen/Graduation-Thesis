@@ -1,0 +1,70 @@
+{
+ "description": "Medical retrieved-top1 relevant vs distracting dataset (MedCPT top-1, Claude Opus 5.5 labels)",
+ "source": {
+  "retrieval": "/home/qluai/ZJS/medical_transfer/data/train_medcpt_top10.json",
+  "labels": "/home/qluai/ZJS/medical_transfer/labels/train_top1_claude.jsonl"
+ },
+ "rules": "step4b: drop neutral; stratified split by (source, label); balance train by downsampling majority per source; eval natural",
+ "seed": 42,
+ "train_ratio": 0.8,
+ "dropped": {
+  "stale": 20,
+  "neutral": 2348
+ },
+ "counts": {
+  "all": {
+   "medqa_train|distracting": 30,
+   "medmcqa_train|distracting": 3534,
+   "medmcqa_train|relevant": 2187,
+   "medqa_train|relevant": 5
+  },
+  "train_unbalanced": {
+   "medmcqa_train|distracting": 2827,
+   "medmcqa_train|relevant": 1749,
+   "medqa_train|distracting": 24,
+   "medqa_train|relevant": 4
+  },
+  "train": {
+   "medmcqa_train|distracting": 1749,
+   "medmcqa_train|relevant": 1749,
+   "medqa_train|distracting": 4,
+   "medqa_train|relevant": 4
+  },
+  "eval": {
+   "medmcqa_train|distracting": 707,
+   "medmcqa_train|relevant": 438,
+   "medqa_train|distracting": 6,
+   "medqa_train|relevant": 1
+  }
+ },
+ "balance_details": {
+  "medmcqa_train": {
+   "before": {
+    "relevant": 1749,
+    "distracting": 2827
+   },
+   "after": {
+    "relevant": 1749,
+    "distracting": 1749
+   },
+   "dropped": {
+    "relevant": 0,
+    "distracting": 1078
+   }
+  },
+  "medqa_train": {
+   "before": {
+    "relevant": 4,
+    "distracting": 24
+   },
+   "after": {
+    "relevant": 4,
+    "distracting": 4
+   },
+   "dropped": {
+    "relevant": 0,
+    "distracting": 20
+   }
+  }
+ }
+}

@@ -1,0 +1,57 @@
+{
+ "medcpt": {
+  "display": "MedCPT score",
+  "threshold": null,
+  "direction": "greater"
+ },
+ "bge": {
+  "display": "BGE Reranker",
+  "threshold": 0.9093719205098925,
+  "direction": "greater"
+ },
+ "utility_ce": {
+  "display": "Utility CE",
+  "threshold": 0.2320190513253893,
+  "direction": "greater"
+ },
+ "crag": {
+  "display": "CRAG Evaluator",
+  "threshold": 0.15271934880501892,
+  "direction": "greater"
+ },
+ "dus": {
+  "display": "DUS",
+  "threshold": 0.0025052706766917287,
+  "direction": "greater"
+ },
+ "llm_judge": {
+  "display": "LLM Judge",
+  "threshold": 0.0025052706788161847,
+  "direction": "greater"
+ },
+ "selfrag7b": {
+  "display": "Self-RAG-7B",
+  "threshold": 4.62109375,
+  "direction": "greater"
+ },
+ "ours_qwen3_4b_zeroshot": {
+  "display": "Ours Qwen3-4B (zero-shot)",
+  "threshold": 0.5,
+  "direction": "greater"
+ },
+ "ours_gemma2b_zeroshot": {
+  "display": "Ours Gemma2-2B (zero-shot)",
+  "threshold": 0.5,
+  "direction": "greater"
+ },
+ "ours_qwen3_4b_medical": {
+  "display": "Ours Qwen3-4B (medical)",
+  "threshold": 0.5,
+  "direction": "greater"
+ },
+ "ours_gemma2b_medical": {
+  "display": "Ours Gemma2-2B (medical)",
+  "threshold": 0.5,
+  "direction": "greater"
+ }
+}
