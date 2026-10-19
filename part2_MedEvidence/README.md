@@ -104,7 +104,7 @@ MIRAGE 全部 7,663 题，选项准确率（%），规则提取选项字母判�
 python verify.py
 ```
 
-数据文件为 gzip 压缩，`gzip -dk <文件>` 解压查看。`results/training/` 为医疗训练数据与训练标注，`results/retrieval/` 为 MIRAGE 检索结果的段落编号。
+数据文件为 gzip 压缩，`gzip -dk <文件>` 解压查看。`results/training/` 为医疗训练数据与训练标注，`results/zero_shot_checkpoints/` 为零样本使用的通用域向量（Qwen3-4B 19/22、Gemma2-2B 14/18），`results/retrieval/` 为 MIRAGE 检索结果的段落编号。
 
 ## 代码
 
@@ -116,7 +116,7 @@ verify.py
 ```
 
 检索与编码：Python 3.11，torch 2.5.1，transformers 4.44.2。训练、打分与生成：Python 3.12，torch 2.10.0，transformers 4.56.2，vLLM 0.19.0。
-工作目录由 `MT_WORK` 指定（默认当前目录），需要 `data/mirage/benchmark.json`、MedRAG 的 PubMed 与教科书语料（`corpus/<name>/chunk/*.jsonl`）和 StatPearls 原始包（`STATPEARLS_TAR`）。标注与检查所需的 `KAKOU_API_KEY` / `KAKOU_BASE_URL`、`XTY_API_KEY` / `XTY_BASE_URL` 写在 `$MT_WORK/.env`。零样本 Ours 需要通用域 checkpoint（`CSV_RETRIEVED_DIR`），Utility CE 需要其模型权重（`CE_MODEL`），DUS 需要 `DUS_MODEL`。
+工作目录由 `MT_WORK` 指定（默认当前目录），需要 `data/mirage/benchmark.json`、MedRAG 的 PubMed 与教科书语料（`corpus/<name>/chunk/*.jsonl`）和 StatPearls 原始包（`STATPEARLS_TAR`）。标注与检查所需的 `KAKOU_API_KEY` / `KAKOU_BASE_URL`、`XTY_API_KEY` / `XTY_BASE_URL` 写在 `$MT_WORK/.env`。零样本 Ours 使用 `results/zero_shot_checkpoints/` 中的通用域 checkpoint（`CSV_RETRIEVED_DIR` 指向该目录），Utility CE 需要其模型权重（`CE_MODEL`），DUS 需要 `DUS_MODEL`。
 
 ```bash
 bash run.sh corpus

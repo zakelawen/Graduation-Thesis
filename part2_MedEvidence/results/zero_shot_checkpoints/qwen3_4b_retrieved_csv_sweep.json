@@ -1,0 +1,18 @@
+{
+ "inject_19_cls_22": {
+  "str_layer": 19,
+  "cls_layer": 22,
+  "best_auroc": 0.9149683780339993,
+  "best_accuracy": 0.8304449648711943,
+  "best_avg_margin": 2.469827175140381,
+  "best_epoch": 3,
+  "final_auroc": 0.9119343785934053,
+  "final_accuracy": 0.8201405152224824,
+  "final_avg_margin": 3.2174906730651855,
+  "checkpoint": "qwen3_4b_retrieved_inject_19_cls_22_csv.pt",
+  "base_model_key": "qwen3_4b",
+  "run_name": "qwen3_4b_retrieved",
+  "dataset_variant": "retrieved",
+  "fixed_seed": 42
+ }
+}

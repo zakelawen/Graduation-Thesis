@@ -1,0 +1,18 @@
+{
+ "inject_14_cls_18": {
+  "str_layer": 14,
+  "cls_layer": 18,
+  "best_auroc": 0.9029071619479753,
+  "best_accuracy": 0.8374707259953161,
+  "best_avg_margin": 2.0610666275024414,
+  "best_epoch": 7,
+  "final_auroc": 0.8996934922460142,
+  "final_accuracy": 0.8299765807962529,
+  "final_avg_margin": 2.204418659210205,
+  "checkpoint": "gemma2b_retrieved_inject_14_cls_18_csv.pt",
+  "base_model_key": "gemma2b",
+  "run_name": "gemma2b_retrieved",
+  "dataset_variant": "retrieved",
+  "fixed_seed": 42
+ }
+}
